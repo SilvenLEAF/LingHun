@@ -10,6 +10,8 @@ const SignupStrategy = require('./passportStrategies/SignupStrategy');
 
 
 
+const GithubStrategy = require('./passportStrategies/GithubStrategy');
+const GoogleStrategy = require('./passportStrategies/GoogleStrategy');
 
 
 
@@ -46,3 +48,8 @@ passport.deserializeUser((id, done)=>{
 ------------------------------------ */
 passport.use('local-signup', SignupStrategy);
 passport.use('local-login', LoginStrategy);
+
+
+
+passport.use(GoogleStrategy);
+passport.use(GithubStrategy);
