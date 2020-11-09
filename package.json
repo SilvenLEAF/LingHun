@@ -1,0 +1,36 @@
+{
+  "name": "linghun",
+  "version": "1.0.0",
+  "description": "It's the Soul and the LING HUN of my Future.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SilvenLEAF/LingHun.git"
+  },
+  "keywords": [
+    "LingHun",
+    "SilvenLEAF"
+  ],
+  "author": "SilvenLEAF",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SilvenLEAF/LingHun/issues"
+  },
+  "homepage": "https://github.com/SilvenLEAF/LingHun#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "chalk": "^4.1.0",
+    "cookie-session": "^1.4.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.13",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
