@@ -59,6 +59,19 @@ const LinkedinSchema = new mongoose.Schema({
 
 
 
+const TwitterSchema = new mongoose.Schema({
+  twitterId: String,
+  
+  username: String,
+  profileImage: String,
+});
+
+
+
+
+
+
+
 
 
 const LocalSchema = new mongoose.Schema({
@@ -90,6 +103,8 @@ const UserSchema = new mongoose.Schema({
   google: GoogleSchema,
   github: GithubSchema,
   linkedin: LinkedinSchema,
+
+  twitter: TwitterSchema,
 
   
 

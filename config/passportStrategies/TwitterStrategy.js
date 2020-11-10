@@ -11,8 +11,8 @@ const User = require('../../models/User');
 
 module.exports = TwitterStrategy = new Strategy(
   {
-    clientID: process.env.TWITTER_CLIENT_ID,
-    clientSecret: process.env.TWITTER_CLIENT_SECRET,
+    consumerKey: process.env.TWITTER_CONSUMER_KEY,
+    consumerSecret: process.env.TWITTER_CONSUMER_SECRET,
     callbackURL: `/auth/twitter/callback`
   },
 
@@ -21,5 +21,34 @@ module.exports = TwitterStrategy = new Strategy(
 
   (accessToken, refreshToken, profile, done)=>{
     console.log(profile);
-  }
+
+    User.findOne({ 'twitter.twitterId': profile.id }).then(existingUser=>{
+
+
+      // if the user already exists, retrieve the account
+      if(existingUser) return done(null, existingUser);
+
+
+
+      // if not, create a new account
+      User.create({
+        username: profile.displayName,
+        profileImage: profile.photos[0].value,
+        createdAt: new Date(),
+
+        'twitter.twitterId': profile.id,
+        
+
+        'twitter.username': profile.displayName,
+        'twitter.profileImage': profile.photos[0].value,
+
+
+        twitterHandle: `@${ profile.username }`,
+      }).then(newUser=> done(null, newUser));
+
+
+
+
+    })
+  } 
 )
