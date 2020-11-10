@@ -45,6 +45,22 @@ const GithubSchema = new mongoose.Schema({
 
 
 
+const LinkedinSchema = new mongoose.Schema({
+  linkedinId: String,
+  email: String,
+  username: String,
+  profileImage: String,
+});
+
+
+
+
+
+
+
+
+
+
 const LocalSchema = new mongoose.Schema({
   email: String,
   password: String,
@@ -73,6 +89,7 @@ const LocalSchema = new mongoose.Schema({
 const UserSchema = new mongoose.Schema({
   google: GoogleSchema,
   github: GithubSchema,
+  linkedin: LinkedinSchema,
 
   
 
