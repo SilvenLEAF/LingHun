@@ -78,12 +78,22 @@ const LocalSchema = new mongoose.Schema({
   email: String,
   password: String,
   
-  username: String,
-  profileImage: String,
-
-
+  isVerified: {
+    type: Boolean,
+    default: false
+  },
+  
   resetToken: String,
   resetTokenExpires: Date,
+  
+  
+  verificationToken: String,
+  verificationTokenExpires: Date,
+  
+  
+  
+  username: String,
+  profileImage: String,
 })
 
 
