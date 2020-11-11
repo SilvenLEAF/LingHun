@@ -93,14 +93,6 @@ require('./config/passportConfig');
 /* -------------------------------------------------
 .                    routes
 ------------------------------------------------- */
-app.get('/forgotForm', (req, res)=>{
-  res.sendFile(path.join(__dirname, 'client/build/forgotForm.html'))
-})
-app.get('/reset/:token', (req, res)=>{
-  res.sendFile(path.join(__dirname, 'client/build/resetPassword.html'))
-})
-
-// -------------------------------------------------
 app.use(require('./routes/mailRoutes/resetPasswordRoute'));
 app.use(require('./routes/oauthRoutes/oauthRoute'));
 app.use(require('./routes/authRoute'));
