@@ -77,8 +77,13 @@ const TwitterSchema = new mongoose.Schema({
 const LocalSchema = new mongoose.Schema({
   email: String,
   password: String,
+  
   username: String,
   profileImage: String,
+
+
+  resetToken: String,
+  resetTokenExpires: Date,
 })
 
 
