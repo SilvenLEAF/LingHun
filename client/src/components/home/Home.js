@@ -24,12 +24,12 @@ function Home() {
         </div>
         
         <div className="myLandingDescription">
-          Isn't is really frustrating to come up with the perfect name for your website only to find out that the domain name is not available? Not anymore! Check if the domain has already been taken with just a simple click.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa reprehenderit error nihil officiis reiciendis debitis ipsa, placeat doloribus delectus unde omnis saepe facere vitae voluptatibus!
         </div>
 
         <div className="myLandingBtnHolder">
           <Link to="/search" className="btn myBtn waves-effect waves-light myLandingBtn" >
-            Check your Domain 
+            Ling Hun Action Button
           </Link>
         </div>
       </div>
