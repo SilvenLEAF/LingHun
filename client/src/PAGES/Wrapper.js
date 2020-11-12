@@ -15,6 +15,7 @@ import UserList from '../components/profile/UserList';
 import UpdateProfile from '../components/profile/UpdateProfile';
 import UserProfile from '../components/profile/UserProfile';
 import Search from '../components/search/Search';
+import Forgotten from '../components/auth.js/reset/ForgottenForm';
 
 
 
@@ -32,6 +33,10 @@ function Wrapper() {
       <Route path="/signup" component={Signup} />
       <Route path="/loginForm" component={LogInForm} />
       <Route path="/signupForm" component={SignUpForm} />
+
+      
+      <Route path="/forgotten" component={Forgotten} />
+
 
       <Route path="/profile" component={Profile} />
       <Route path="/updateProfile" component={UpdateProfile} />

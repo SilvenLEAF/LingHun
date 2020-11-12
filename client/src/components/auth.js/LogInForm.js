@@ -107,7 +107,7 @@ function LogInForm() {
 
         <div className="myAuthFormFooter">
           <p>
-            Forgot password? <Link to="/signup">Reset password</Link>
+            Forgot password? <Link to="/forgotten">Reset password</Link>
           </p>
           <p>
             Need an account? <Link to="/signup">Sign up</Link>
