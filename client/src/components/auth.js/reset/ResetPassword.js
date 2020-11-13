@@ -5,7 +5,7 @@ import './../../../styles/Form.scss'
 
 import React, { useEffect, useState } from 'react'
 import swal from 'sweetalert';
-import { Link } from 'react-router-dom';
+import { Link, useHistory, useParams } from 'react-router-dom';
 
 
 
@@ -23,7 +23,8 @@ function ResetPassword() {
 
 
 
-
+  const { token } = useParams();
+  console.log({token});
 
 
   
