@@ -15,11 +15,11 @@ It's the Soul and the LING HUN of my Future.
 
 ###### Main Features
 - [x] **CRUD**
-- [ ] **PWA (with Offline Game)**
+- [x] **PWA (with Offline Game)**
 
 
 ###### Others
-- [ ] Demo Login
+- [x] Demo Login
 - [ ] Nodemailer Contact
 - [ ] Framermotion
 ***
