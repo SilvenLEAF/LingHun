@@ -16,6 +16,7 @@ import UpdateProfile from '../components/profile/UpdateProfile';
 import UserProfile from '../components/profile/UserProfile';
 import Search from '../components/search/Search';
 import Forgotten from '../components/auth.js/reset/ForgottenForm';
+import ResetPassword from '../components/auth.js/reset/ResetPassword';
 
 
 
@@ -36,6 +37,7 @@ function Wrapper() {
 
       
       <Route path="/forgotten" component={Forgotten} />
+      <Route path="/reset/:token" component={ResetPassword} />
 
 
       <Route path="/profile" component={Profile} />
