@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const User = require('../../models/User');
+const bcrypt = require('bcryptjs');
 
 const crypto = require('crypto');
 const nodemailer = require('nodemailer');
@@ -9,7 +10,7 @@ const nodemailer = require('nodemailer');
 
 
 
-router.post('/resetPassword', (req, res)=>{
+router.post('/forgottenPassword', (req, res)=>{
   // create token
   crypto.randomBytes(32, (err, buffer)=>{
     if(err) console.log(err);
@@ -57,6 +58,44 @@ router.post('/resetPassword', (req, res)=>{
   })
 })
 
+
+
+
+
+
+
+
+
+
+
+
+
+router.post('/resetPassword', async (req, res, next)=>{
+  try {
+    const { newPassword, token } = req.body;
+
+    // find user by the token and expiration time
+    const user = await User.findOne({ resetToken: token, resetTokenExpires: { $gt: Date.now() } })
+    
+    if(!user) return res.status(422).json({ msg: `Try again session expired` });
+
+    user.local.password = bcrypt.hashSync(newPassword, bcrypt.genSaltSync());
+    user.local.resetToken = undefined;
+    user.local.resetTokenExpires = undefined;
+
+
+    const savedUser = await user.save();
+    res.json({ msg: `Password updated` });
+
+
+
+
+
+
+  } catch (err) {
+    next(err);
+  }
+})
 
 
 

@@ -24,25 +24,27 @@ function ResetPassword() {
 
 
   const { token } = useParams();
-  console.log({token});
+  
 
 
   
-  const [password, setPassword] = useState('');
+  const [newPassword, setNewPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-  
+  const [error, setError] = useState('');
 
 
   const handleSubmit = async (e)=>{
     e.preventDefault();
   
-  
+    if(confirmPassword !== newPassword) return setError('Type the same password twice');
+      
+    
     const response = await fetch('/resetPassword', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ password })
+      body: JSON.stringify({ newPassword, token })
     });
 
     const data = await response.json();
@@ -51,7 +53,7 @@ function ResetPassword() {
 
 
 
-    setPassword('');
+    setNewPassword('');
     swal("See your password", "See your password for further instructions. It may take some time to send the password. Wait 5 to 10mins","success");    
   }
 
@@ -80,7 +82,7 @@ function ResetPassword() {
           <label htmlFor="password">New password <span className="red-text">(Required)</span></label>
           <div>
             <i className="myPrefix material-icons">memory</i>
-            <input type="password" name="password" value={ password } onChange={ e=> setPassword(e.target.value) } required />
+            <input type="password" name="password" value={ newPassword } onChange={ e=> setNewPassword(e.target.value) } required />
           </div>
         </div>
 
