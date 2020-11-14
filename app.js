@@ -93,11 +93,16 @@ require('./config/passportConfig');
 /* -------------------------------------------------
 .                    routes
 ------------------------------------------------- */
+//                  auth routes
+app.use(require('./routes/authRoutes/authRoute'));
+app.use(require('./routes/authRoutes/oauthRoute'));
+app.use('/user', require('./routes/authRoutes/userRoute'));
+
+
+
+//                  mail routes
 app.use(require('./routes/mailRoutes/ContactRoute'));
-app.use(require('./routes/mailRoutes/resetPasswordRoute'));
-app.use(require('./routes/oauthRoutes/oauthRoute'));
-app.use(require('./routes/authRoute'));
-app.use('/user', require('./routes/userRoute'));
+app.use(require('./routes/mailRoutes/ResetPasswordRoute'));
 
 
 

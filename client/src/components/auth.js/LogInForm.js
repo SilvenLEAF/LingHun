@@ -104,14 +104,14 @@ function LogInForm() {
         </div>
 
 
-
+ 
         <div className="myAuthFormFooter">
           <p>
             Forgot password? <Link to="/forgotten">Reset password</Link>
           </p>
           <p>
             Need an account? <Link to="/signup">Sign up</Link>
-          </p>
+          </p> 
         </div>
 
 

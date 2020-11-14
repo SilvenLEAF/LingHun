@@ -1,12 +1,11 @@
 const router = require('express').Router();
-const userController = require('../controllers/userController');
+const userController = require('../../controllers/userController');
 
 
 // -------------------middlewares-------------------
-const isLoggedin = require('../middlewares/isLoggedin');
-
-const DeleteAccount = require('../middlewares/DeleteAccount');
-const UpdateAccount = require('../middlewares/UpdateAccount');
+const isLoggedin = require('../../middlewares/isLoggedin');
+const DeleteAccount = require('../../middlewares/DeleteAccount');
+const UpdateAccount = require('../../middlewares/UpdateAccount');
 
 
 
