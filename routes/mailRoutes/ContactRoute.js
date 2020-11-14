@@ -19,8 +19,8 @@ router.post('/contact', (req, res)=>{
   });
 
   const mailOptions = {
-    to: user.local.email,
-    from: 'no-reply@gmail.com',
+    to: 'alvenleaf@gmail.com',
+    from: 'silvenleaf@gmail.com',
 
     subject: title,
     text: content

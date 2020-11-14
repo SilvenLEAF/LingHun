@@ -30,11 +30,18 @@ function Contact() {
   const [content, setContent] = useState('');
 
 
-  const handleSubmit = (e)=>{
+  const handleSubmit = async (e)=>{
     e.preventDefault();
   
+    const response = await fetch('/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ title, content })
+    })
   
-  
+    const data = await response.json();
 
 
 
