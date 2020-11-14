@@ -75,7 +75,7 @@ router.post('/resetPassword', async (req, res, next)=>{
     const { newPassword, token } = req.body;
 
     // find user by the token and expiration time
-    const user = await User.findOne({ resetToken: token, resetTokenExpires: { $gt: Date.now() } })
+    const user = await User.findOne({ 'local.resetToken': token, 'local.resetTokenExpires': { $gt: Date.now() } })
     
     if(!user) return res.status(422).json({ msg: `Try again session expired` });
 

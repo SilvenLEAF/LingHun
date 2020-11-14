@@ -35,7 +35,7 @@ function Forgotten() {
     e.preventDefault();
   
   
-    const response = await fetch('/resetPassword', {
+    const response = await fetch('/forgottenPassword', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
