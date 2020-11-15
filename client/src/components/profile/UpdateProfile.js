@@ -42,6 +42,7 @@ function UpdateProfile() {
   const handleSubmit = async (e)=>{
     e.preventDefault();
 
+    
     const updateObj = {};
     updateObj.userId = userData._id;
 
@@ -61,17 +62,31 @@ function UpdateProfile() {
     console.log('update started');
 
 
-    const res = await fetch('/user', {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(updateObj)
-    })
+    if(userData.role === 'demo'){
+      setUserData({
+        ...userData,
+        ...updateObj
+      })
 
 
-    const data = await res.json();
-    setUserData(data);
+
+    } else {
+      
+      const res = await fetch('/user', {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(updateObj)
+      })
+  
+  
+      const data = await res.json();
+      setUserData(data);
+    }
+
+
+    
     history.push('/profile')
   }
   

@@ -61,7 +61,7 @@ module.exports = DemoStrategy = new Strategy(
         role: 'demo',
         
         username: 'Monkey D Luffy',
-        profileImage: '/Demo.png',
+        profileImage: '/images/users/Demo.png',
         
         about: `Ahoy there!! The future's Pirate King is here! I am Luffy, a pirate with a bounty of $1 BILLION Beli on my head. I'm the Captain of Mugiwara Kaizokudan. Everybody calls me Mugiwara no Luffy (Straw Hat Luffy). I ate Gomu Gomu Devil Fruit and became a Gomu Ningen (Rubber Man). I love eating meat a lot. Sea and pointy things are my weakness. I am sailing across the Deadlist Grand Line to find and attain One Piece. I will be the PIRATE KING after Gold D Roger!!!`,
         title: `Pirate Captain`,

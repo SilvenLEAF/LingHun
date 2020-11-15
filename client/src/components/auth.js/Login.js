@@ -32,7 +32,7 @@ function Login() {
     e.preventDefault();
     console.log('started demo login')
 
-    const demoUser = { email: `demo@gmail.com`, password: `123456Aa` };
+    const demoUser = { email: `demo@gmail.com`, password: `0123456789` };
     
     
     
@@ -40,7 +40,7 @@ function Login() {
     
 
 
-    const loginRes = await fetch('/login', {
+    const loginRes = await fetch('/demo', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -122,9 +122,9 @@ function Login() {
           
           
           
-          <div className="myOauthBtn myOauthLinkedin">
+          <a href="/auth/linkedin" className="myOauthBtn myOauthLinkedin">
             <i className="fa fa-linkedin"></i> Continue with LinkedIN
-          </div>
+          </a>
           
           
           
@@ -135,9 +135,9 @@ function Login() {
           
           
           
-          <div className="myOauthBtn myOauthTwitter">
+          <a href="/auth/twitter" className="myOauthBtn myOauthTwitter">
             <i className="fa fa-twitter"></i> Continue with Twitter
-          </div>
+          </a>
           
           
           

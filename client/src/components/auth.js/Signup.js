@@ -130,9 +130,9 @@ function Signup() {
           
           
           
-          <div className="myOauthBtn myOauthLinkedin">
+          <a href="/auth/linkedin" className="myOauthBtn myOauthLinkedin">
             <i className="fa fa-linkedin"></i> Continue with LinkedIN
-          </div>
+          </a>
           
           
           
@@ -143,9 +143,9 @@ function Signup() {
           
           
           
-          <div className="myOauthBtn myOauthTwitter">
+          <a href="/auth/twitter" className="myOauthBtn myOauthTwitter">
             <i className="fa fa-twitter"></i> Continue with Twitter
-          </div>
+          </a>
           
           
           
