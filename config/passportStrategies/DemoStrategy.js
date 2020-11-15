@@ -70,7 +70,7 @@ module.exports = DemoStrategy = new Strategy(
         careerStatus: `Pirate Captain`,
         workingAt: `Mugiwara Kaizokudan`,
 
-        websiteLik: `SilvenLEAF.github.io`,
+        websiteLink: `SilvenLEAF.github.io`,
         twitterHandle: `@SilvenLEAF`
 
 
