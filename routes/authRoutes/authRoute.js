@@ -25,6 +25,46 @@ router.get('/logout', (req, res)=>{
 
 
 /* --------------------------------------
+.                 DEMO
+-------------------------------------- */
+router.post('/demo', (req, res, next)=>{
+  passport.authenticate('demo', (err, user, info)=>{
+    // if there is any error (including the error I defined on the Strategy)
+    if(err) return res.status(400).json(err);
+
+
+    req.logIn(user, (err)=>{
+      // if there is an error while logging in
+      if(err) return res.status(500).json({ msg: `Oops, something went wrong`, error: err.message });
+
+
+
+      // if everything is OK, return the user onto the Cookie-fyer
+      return res.json(user);
+    })
+
+
+
+  })(req, res, next)
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------
 .                 SIGNUP
 -------------------------------------- */
 router.post('/signup', (req, res, next)=>{

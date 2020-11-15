@@ -151,7 +151,7 @@ const UserSchema = new mongoose.Schema({
   },
   location: {
     type: String,
-    default: `Somewhere on Earth`,
+    default: `Somewhere on Earth`, 
   },
   careerStatus: String,
   workingAt: String,

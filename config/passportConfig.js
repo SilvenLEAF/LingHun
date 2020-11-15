@@ -6,6 +6,7 @@ const User = require('../models/User');
 
 
 const LoginStrategy = require('./passportStrategies/LoginStrategy');
+const DemoStrategy = require('./passportStrategies/DemoStrategy');
 const SignupStrategy = require('./passportStrategies/SignupStrategy');
 
 
@@ -50,6 +51,7 @@ passport.deserializeUser((id, done)=>{
 ------------------------------------ */
 passport.use('local-signup', SignupStrategy);
 passport.use('local-login', LoginStrategy);
+passport.use('demo', DemoStrategy)
 
 
 
