@@ -8,3 +8,15 @@
 [1114/094023.848:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
 [1114/094023.947:ERROR:exception_snapshot_win.cc(99)] thread ID 1504 not found in process
 [1115/074015.147:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1115/123817.732:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1115/123817.757:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1115/123818.210:ERROR:exception_snapshot_win.cc(99)] thread ID 5416 not found in process
+[1115/123818.210:ERROR:exception_snapshot_win.cc(99)] thread ID 9640 not found in process
+[1115/123817.712:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1115/123817.712:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1115/123818.210:ERROR:exception_snapshot_win.cc(99)] thread ID 9808 not found in process
+[1115/123817.739:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1115/123818.210:ERROR:exception_snapshot_win.cc(99)] thread ID 9668 not found in process
+[1115/123818.096:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1115/123818.210:ERROR:exception_snapshot_win.cc(99)] thread ID 9592 not found in process
+[1115/123818.210:ERROR:exception_snapshot_win.cc(99)] thread ID 992 not found in process
