@@ -42,7 +42,7 @@ export const SignedInMobileLinks = ({ setUserData }) => {
       <li><NavLink to="/allUsers" className="sidenav-close" ><i className="fa fa-users"></i>All Users</NavLink></li>
       <li><NavLink to="/contact" className="sidenav-close" ><i className="fa fa-envelope"></i>Contact Me</NavLink></li>
       
-      <li onClick={ handleLogOut } ><NavLink to="/" className="sidenav-close" ><i className="fa fa-sign-out"></i>Log out</NavLink></li>
+      <li onClick={ handleLogOut } ><NavLink to="/" className="sidenav-close" ><i className="fas fa-sign-out-alt"></i>Log out</NavLink></li>
       <li><a target="_blank" rel="noopener noreferrer" href="https://silvenleaf.github.io" className="sidenav-close" ><i className="fa fa-info"></i>About Me</a></li>
     </>
   )
