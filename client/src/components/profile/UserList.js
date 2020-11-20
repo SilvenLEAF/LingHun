@@ -15,6 +15,8 @@ import { AllUserContext } from '../../contexts/subContexts/AllUserContext'
 
 
 import UserListItem from './UserListItem'
+import MyLoader from '../../helpers/MyLoader';
+
 
 
 
@@ -59,8 +61,10 @@ function UserList() {
   if(!userData) history.push('/login');
   if(userData && !userData.isVerified) history.push('/verifyDoor');
 
-  return (
-    <div className="container myUserListPage">
+  return allUsers[0] ?  (
+    <MyLoader/>
+  ) : (
+    <div className="container myUserListPage">      
       <h6 className="blue-text">All users</h6>
 
 
