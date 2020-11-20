@@ -4,7 +4,8 @@ import '../../styles/Home.scss';
 
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-
+import { motion } from 'framer-motion'
+import { containerVariant } from '../../helpers/animations/containerVariant';
 
 
 
@@ -15,8 +16,15 @@ function Home() {
   }, [])
 
   
+
+  
   return (
-    <div className="container">
+    <motion.div className="container"
+      variants={ containerVariant }
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
 
       <div id="myLandingIcon"></div>
       <div className="myLandingContentHolder">
@@ -29,7 +37,7 @@ function Home() {
         </div>
 
         <div className="myLandingBtnHolder">
-          <Link to="/search" className="btn myBtn waves-effect waves-light myLandingBtn" >
+          <Link to="/actionPage" className="btn myBtn waves-effect waves-light myLandingBtn" >
             Ling Hun Action Button
           </Link>
         </div>
@@ -38,7 +46,7 @@ function Home() {
 
 
       
-    </div>
+    </motion.div>
   )
 }
 

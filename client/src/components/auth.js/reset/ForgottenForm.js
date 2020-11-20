@@ -5,6 +5,8 @@ import './../../../styles/Form.scss'
 
 import React, { useContext, useEffect, useState } from 'react'
 import { Link, useHistory } from 'react-router-dom';
+import { motion } from 'framer-motion'
+import { containerVariant } from '../../../helpers/animations/containerVariant';
 
 
 import { AuthContext } from '../../../contexts/subContexts/AuthContext';
@@ -104,7 +106,12 @@ function Forgotten() {
 
 
   return (
-    <div className= "container">
+    <motion.div className= "container"
+      variants={ containerVariant }
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
 
 
 
@@ -149,7 +156,7 @@ function Forgotten() {
 
         
       </form>
-    </div>
+    </motion.div>
   )
 
 }

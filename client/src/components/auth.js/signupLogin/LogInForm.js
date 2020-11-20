@@ -5,6 +5,9 @@ import '../../../styles/auth/AuthForm.scss'
 
 import React, { useContext, useEffect, useState } from 'react'
 import { Link, useHistory } from 'react-router-dom'
+import { motion } from 'framer-motion'
+import { containerVariant } from '../../../helpers/animations/containerVariant';
+
 
 import { AuthContext } from '../../../contexts/subContexts/AuthContext'
 import { Toast } from '../../../helpers/MyAlerts'
@@ -102,7 +105,13 @@ function LogInForm() {
 
 
   return (
-    <div className="container myAuthForm" >
+    <motion.div className="container myAuthForm"
+      variants={ containerVariant }
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+
+    >
       <div className="myAuthAppName">LingHun</div>
       <div className="myAuthTitle">Log in to your account</div>
       
@@ -148,7 +157,7 @@ function LogInForm() {
 
         
       </form>
-    </div>
+    </motion.div>
   )
 }
 

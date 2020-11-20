@@ -5,6 +5,9 @@ import '../../styles/profile/UpdateProfile.scss'
 
 import React, { useEffect, useContext, useState } from 'react'
 import { Link, useHistory } from 'react-router-dom';
+import { motion } from 'framer-motion'
+import { containerVariant } from '../../helpers/animations/containerVariant';
+
 
 
 import { AuthContext } from '../../contexts/subContexts/AuthContext';
@@ -104,7 +107,12 @@ function UpdateProfile() {
   if(userData && !userData.isVerified) history.push('/verifyDoor');
 
   return (
-    <div id="myUpdateProfilePage" className="container myProfilePage">      
+    <motion.div id="myUpdateProfilePage" className="container myProfilePage"
+      variants={ containerVariant }
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >      
       <div className="mainProfileIcon" style={{background: `url(${ userData.profileImage }) center/cover`}} ></div>
 
       <div className="myProfileMainHeader">
@@ -242,7 +250,7 @@ function UpdateProfile() {
 
 
 
-    </div>
+    </motion.div>
   )
 }
 

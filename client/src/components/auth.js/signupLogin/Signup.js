@@ -4,6 +4,9 @@ import '../../../styles/auth/AuthDoor.scss'
 
 import React, { useEffect, useState, useContext } from 'react'
 import { Link, useHistory } from 'react-router-dom'
+import { motion } from 'framer-motion'
+import { containerVariant } from '../../../helpers/animations/containerVariant';
+
 
 
 import { AuthContext } from '../../../contexts/subContexts/AuthContext'
@@ -100,7 +103,13 @@ function Signup() {
 
 
   return (
-    <div className="container myAuthDoor" >
+    <motion.div className="container myAuthDoor"
+      variants={ containerVariant }
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+
+    >
       <div className="myAuthAppName">LingHun</div>
       <div className="myAuthTitle">Sign up a new account</div>
 
@@ -191,7 +200,7 @@ function Signup() {
 
         
       </form>
-    </div>
+    </motion.div>
   )
 }
 

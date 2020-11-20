@@ -4,6 +4,8 @@ import './../../styles/Form.scss'
 
 
 import React, { useEffect, useState } from 'react'
+import { motion } from 'framer-motion'
+import { containerVariant } from '../../helpers/animations/containerVariant';
 import { Toast } from '../../helpers/MyAlerts';
 
 
@@ -93,7 +95,12 @@ function Contact() {
 
 
   return (
-    <div className= "container">
+    <motion.div className= "container"
+      variants={ containerVariant }
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
 
 
 
@@ -152,7 +159,7 @@ function Contact() {
 
         
       </form>
-    </div>
+    </motion.div>
   )
 
 }
