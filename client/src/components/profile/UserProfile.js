@@ -5,8 +5,8 @@ import '../../styles/profile/Profile.scss'
 import React, { useEffect, useContext } from 'react'
 import { Link, useHistory } from 'react-router-dom';
 import moment from 'moment'
-import { motion } from 'framer-motion'
-import { containerVariant } from '../../helpers/animations/containerVariant';
+ 
+ 
 
 
 import { AuthContext } from '../../contexts/subContexts/AuthContext';
@@ -35,12 +35,7 @@ function UserProfile(props) {
   if(userData && !userData.isVerified) history.push('/verifyDoor');
 
   return (
-    <motion.div className="container myProfilePage"
-      variants={ containerVariant }
-      initial="hidden"
-      animate="visible"
-      exit="exit"
-    >
+    <div className="container myProfilePage" >
       <div className="mainProfileIcon" style={{background: `url(${ item.profileImage || "/Logo.png" }) center/cover`}} ></div>
 
       <div className="myProfileMainHeader">
@@ -176,7 +171,7 @@ function UserProfile(props) {
 
 
 
-    </motion.div>
+    </div>
   )
 }
 

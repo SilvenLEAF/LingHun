@@ -4,8 +4,8 @@ import '../../../styles/auth/AuthDoor.scss'
 
 import React, { useEffect, useState, useContext } from 'react'
 import { Link, useHistory } from 'react-router-dom'
-import { motion } from 'framer-motion'
-import { containerVariant } from '../../../helpers/animations/containerVariant';
+ 
+ 
 
 
 
@@ -20,7 +20,7 @@ import { Toast } from '../../../helpers/MyAlerts'
 function Signup() {
   useEffect(()=>{
     M.AutoInit();
-  })
+  }, [])
 
 
 
@@ -103,11 +103,8 @@ function Signup() {
 
 
   return (
-    <motion.div className="container myAuthDoor"
-      variants={ containerVariant }
-      initial="hidden"
-      animate="visible"
-      exit="exit"
+    <div className="container myAuthDoor"
+      
 
     >
       <div className="myAuthAppName">LingHun</div>
@@ -200,7 +197,7 @@ function Signup() {
 
         
       </form>
-    </motion.div>
+    </div>
   )
 }
 

@@ -4,8 +4,8 @@ import '../../../styles/auth/AuthDoor.scss'
 
 import React, { useEffect, useContext, useState } from 'react'
 import { Link, useHistory } from 'react-router-dom'
-import { motion } from 'framer-motion'
-import { containerVariant } from '../../../helpers/animations/containerVariant';
+ 
+ 
 
 
 
@@ -108,11 +108,8 @@ function Login() {
 
 
   return (
-    <motion.div className="container myAuthDoor" 
-      variants={ containerVariant }
-      initial="hidden"
-      animate="visible"
-      exit="exit"
+    <div className="container myAuthDoor" 
+      
     >
       <div className="myAuthAppName">LingHun</div>
       <div className="myAuthTitle">Log in to your account</div>
@@ -202,7 +199,7 @@ function Login() {
 
         
       </form>
-    </motion.div>
+    </div>
   )
 }
 

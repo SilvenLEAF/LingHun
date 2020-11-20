@@ -40,7 +40,8 @@ body{
   font-family: Roboto, sans-serif;
   font-size: 14px;  
 
-  background-color: $bodyBG;
+  background-color: $bodyBG;  
+  
 }
 
 
@@ -163,8 +164,12 @@ ul.sidenav {
 
 
 
-
-
+/* ------------------------------------
+.              PAGE HEIGHT
+------------------------------------ */
+#myWrapper > div {
+  min-height: calc(100vh-112px);
+}
 
 
 

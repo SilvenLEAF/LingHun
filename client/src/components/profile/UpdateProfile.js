@@ -5,8 +5,8 @@ import '../../styles/profile/UpdateProfile.scss'
 
 import React, { useEffect, useContext, useState } from 'react'
 import { Link, useHistory } from 'react-router-dom';
-import { motion } from 'framer-motion'
-import { containerVariant } from '../../helpers/animations/containerVariant';
+ 
+ 
 
 
 
@@ -107,12 +107,7 @@ function UpdateProfile() {
   if(userData && !userData.isVerified) history.push('/verifyDoor');
 
   return (
-    <motion.div id="myUpdateProfilePage" className="container myProfilePage"
-      variants={ containerVariant }
-      initial="hidden"
-      animate="visible"
-      exit="exit"
-    >      
+    <div id="myUpdateProfilePage" className="container myProfilePage" >      
       <div className="mainProfileIcon" style={{background: `url(${ userData.profileImage }) center/cover`}} ></div>
 
       <div className="myProfileMainHeader">
@@ -239,8 +234,8 @@ function UpdateProfile() {
             </div>
 
             <div className="myBtnsHolder right-align">
-              <button className="btn myBtn waves-effect waves-light"><i className="fa fa-edit"></i> Update</button>
-              <Link to="/profile" className="btn myRedBtn waves-effect waves-light"><i className="fa fa-remove"></i> Cancel</Link>
+              <button className="btn myBtn waves-effect waves-light myCornerless"><i className="fa fa-edit"></i> Update</button>
+              <Link to="/profile" className="btn myRedBtn waves-effect waves-light myCornerless"><i className="fa fa-remove"></i> Cancel</Link>
             </div>
         </div>
 
@@ -250,7 +245,7 @@ function UpdateProfile() {
 
 
 
-    </motion.div>
+    </div>
   )
 }
 

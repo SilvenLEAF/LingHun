@@ -5,8 +5,8 @@ import '../../styles/profile/Profile.scss'
 import React, { useEffect, useContext } from 'react'
 import { Link, useHistory } from 'react-router-dom';
 import moment from 'moment'
-import { motion } from 'framer-motion'
-import { containerVariant } from '../../helpers/animations/containerVariant';
+ 
+
 
 
 
@@ -59,12 +59,7 @@ function Profile() {
   if(userData && !userData.isVerified) history.push('/verifyDoor');
 
   return (
-    <motion.div className="container myProfilePage"
-      variants={ containerVariant }
-      initial="hidden"
-      animate="visible"
-      exit="exit"
-    >
+    <div className="container myProfilePage" >
       <div className="mainProfileIcon" style={{background: `url(${ userData.profileImage || "/Logo.png" }) center/cover`}} ></div>
 
       <div className="myProfileMainHeader">
@@ -177,8 +172,8 @@ function Profile() {
       </p>
 
        <div className="myProfileBtnsHolder myBtnsHolder right-align">
-          <Link to="/updateProfile" className="btn myBtn waves-effect waves-light"><i className="fa fa-edit"></i> Update Account</Link>
-          <button className="btn myRedBtn waves-effect waves-light" onClick={ deleteProfile } ><i className="fa fa-trash"></i> Delete Account</button>
+          <Link to="/updateProfile" className="btn myBtn waves-effect waves-light myCornerless"><i className="fa fa-edit"></i> Update Account</Link>
+          <button className="btn myRedBtn waves-effect waves-light myCornerless" onClick={ deleteProfile } ><i className="fa fa-trash"></i> Delete Account</button>
         </div>
      </div>
 
@@ -188,7 +183,7 @@ function Profile() {
 
 
 
-    </motion.div>
+    </div>
   )
 }
 

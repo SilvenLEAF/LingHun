@@ -5,8 +5,8 @@ import '../../../styles/auth/AuthForm.scss'
 
 import React, { useEffect, useState, useContext } from 'react'
 import { Link, useHistory } from 'react-router-dom'
-import { motion } from 'framer-motion'
-import { containerVariant } from '../../../helpers/animations/containerVariant';
+ 
+ 
 
 
 
@@ -151,12 +151,7 @@ function SignUpForm() {
   if(userData) history.push('/')
 
   return (
-    <motion.div className="container myAuthForm"
-      variants={ containerVariant }
-      initial="hidden"
-      animate="visible"
-      exit="exit"
-    >
+    <div className="container myAuthForm" >
       <div className="myAuthAppName">LingHun</div>
       <div className="myAuthTitle">Sign up a new account</div>
 
@@ -246,7 +241,7 @@ function SignUpForm() {
 
         
       </form>
-    </motion.div>
+    </div>
   )
 }
 

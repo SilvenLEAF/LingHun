@@ -4,8 +4,8 @@ import '../../styles/profile/UserList.scss'
 import React, { useEffect, useContext, useState } from 'react'
 import { Link, useHistory } from 'react-router-dom';
 import { usePaginatedQuery } from 'react-query'
-import { motion } from 'framer-motion'
-import { containerVariant } from '../../helpers/animations/containerVariant';
+ 
+ 
 
 
 
@@ -66,12 +66,7 @@ function UserList() {
   return !allUsers[0] ?  (
     <MyLoader/>
   ) : (
-    <motion.div className="container myUserListPage"
-      variants={ containerVariant }
-      initial="hidden"
-      animate="visible"
-      exit="exit"
-    >      
+    <div className="container myUserListPage" >      
       <h6 className="blue-text">All users</h6>
 
 
@@ -89,7 +84,7 @@ function UserList() {
 
 
 
-    </motion.div>
+    </div>
   )
 }
 

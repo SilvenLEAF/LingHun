@@ -4,8 +4,8 @@ import '../../../styles/VerifyDoor.scss';
 
 import React, { useContext, useEffect, useState } from 'react'
 import { Link, useHistory } from 'react-router-dom'
-import { motion } from 'framer-motion'
-import { containerVariant } from '../../../helpers/animations/containerVariant';
+ 
+ 
 
 
 
@@ -80,11 +80,8 @@ function VerifyDoor() {
   
   
   return (
-    <motion.div className="container myVerifyDoorPage"
-      variants={ containerVariant }
-      initial="hidden"
-      animate="visible"
-      exit="exit"
+    <div className="container myVerifyDoorPage"
+      
 
     >
       <h5 className="pageTitle red-text center-align">Account NOT verified!</h5>
@@ -102,7 +99,7 @@ function VerifyDoor() {
         <Link to="/changeEmail" className="btn mySecondaryBtn myCornerless">Change Email</Link>
       </div>
       
-    </motion.div>
+    </div>
   )
 }
 

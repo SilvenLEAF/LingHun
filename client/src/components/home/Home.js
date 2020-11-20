@@ -4,8 +4,8 @@ import '../../styles/Home.scss';
 
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { motion } from 'framer-motion'
-import { containerVariant } from '../../helpers/animations/containerVariant';
+ 
+ 
 
 
 
@@ -19,12 +19,7 @@ function Home() {
 
   
   return (
-    <motion.div className="container"
-      variants={ containerVariant }
-      initial="hidden"
-      animate="visible"
-      exit="exit"
-    >
+    <div className="container" >
 
       <div id="myLandingIcon"></div>
       <div className="myLandingContentHolder">
@@ -46,7 +41,7 @@ function Home() {
 
 
       
-    </motion.div>
+    </div>
   )
 }
 
