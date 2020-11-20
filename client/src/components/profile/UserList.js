@@ -61,7 +61,7 @@ function UserList() {
   if(!userData) history.push('/login');
   if(userData && !userData.isVerified) history.push('/verifyDoor');
 
-  return allUsers[0] ?  (
+  return !allUsers[0] ?  (
     <MyLoader/>
   ) : (
     <div className="container myUserListPage">      
