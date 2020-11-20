@@ -124,7 +124,7 @@ function UpdateProfile() {
         <div className="myProfileInfoHolder col s12 m6">
           <div>
             <div className="myProfileInfoTitle">
-              <i className="fa fa-address-card-o"></i> Username 
+              <i className="fas fa-address-card-o"></i> Username 
             </div>
             <div className="myProfileInfoAnswer">
               <input type="text" placeholder={ userData.username} value={username} onChange={ e=> setUsername(e.target.value) } />
@@ -202,7 +202,7 @@ function UpdateProfile() {
 
           <div>
             <div className="myProfileInfoTitle">
-              <i className="fa fa-twitter"></i> Connect on Twitter
+              <i className="fas fa-twitter"></i> Connect on Twitter
             </div>
             <div className="myProfileInfoAnswer">
               <input type="text" placeholder={ userData.twitterHandle} value={twitterHandle} onChange={ e=> setTwitterHandle(e.target.value) } />
