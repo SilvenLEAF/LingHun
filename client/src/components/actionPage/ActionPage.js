@@ -6,7 +6,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 
-import MyLoader from '../../helpers/MyLoader'
+import MyWelcome from '../../helpers/MyWelcome'
 
 
 
@@ -20,7 +20,7 @@ function ActionPage() {
   
   return (
     <div className="container">
-      <MyLoader title="Welcome!"/>      
+      <MyWelcome title="Welcome!"/>      
     </div>
   )
 }

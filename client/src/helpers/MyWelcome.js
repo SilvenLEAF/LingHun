@@ -11,12 +11,12 @@ import React from 'react'
 
 
 
-function MyLoader({ title }) {
+function MyWelcome({ title }) {
   return (
     <>
-     <SpinningLoader title={ title } />
+     <FlippingLoader title={ title } />
     </>
   )
 }
 
-export default MyLoader
+export default MyWelcome
