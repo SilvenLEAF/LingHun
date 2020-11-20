@@ -1,5 +1,5 @@
 import M from 'materialize-css'
-import '../../../styles/AuthDoor.scss'
+import '../../../styles/auth/AuthDoor.scss'
 
 
 import React, { useEffect, useState, useContext } from 'react'

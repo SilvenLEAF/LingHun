@@ -1,6 +1,6 @@
 import M from 'materialize-css'
-import '../../styles/Profile.scss'
-import '../../styles/UpdateProfile.scss'
+import '../../styles/profile/Profile.scss'
+import '../../styles/profile/UpdateProfile.scss'
 
 
 import React, { useEffect, useContext, useState } from 'react'

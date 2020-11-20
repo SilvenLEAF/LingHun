@@ -17,7 +17,7 @@ import Contact from '../components/contact/Contact';
 import UserList from '../components/profile/UserList';
 import UpdateProfile from '../components/profile/UpdateProfile';
 import UserProfile from '../components/profile/UserProfile';
-import Search from '../components/search/Search';
+import ActionPage from '../components/actionPage/ActionPage';
 
 import VerifyEmail from '../components/auth.js/verify/VerifyEmail';
 import ChangeEmail from '../components/auth.js/verify/ChangeEmail';
@@ -33,7 +33,7 @@ function Wrapper() {
 
       <Route exact path="/" component={Home} />
       
-      <Route path="/search" component={Search} />
+      <Route path="/actionPage" component={ActionPage} />
       
       <Route path="/login" component={Login} />
       <Route path="/signup" component={Signup} />

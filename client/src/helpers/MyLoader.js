@@ -11,10 +11,10 @@ import React from 'react'
 
 
 
-function MyLoader() {
+function MyLoader({ title }) {
   return (
     <>
-     <FlippingLoader/>
+     <FlippingLoader title={ title } />
     </>
   )
 }

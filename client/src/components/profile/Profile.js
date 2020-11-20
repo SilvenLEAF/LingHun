@@ -1,5 +1,5 @@
 import M from 'materialize-css'
-import '../../styles/Profile.scss'
+import '../../styles/profile/Profile.scss'
 
 
 import React, { useEffect, useContext } from 'react'

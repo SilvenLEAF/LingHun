@@ -7,7 +7,7 @@ import React from 'react'
 
 
 
-function BouncingLoader() {
+function BouncingLoader({ title }) {
   return (
     <div className="container myLoaderHolder">
       <div>
@@ -17,7 +17,7 @@ function BouncingLoader() {
           <div></div>
           <div></div>
         </div>
-        <h3 className="myLoadingTitle">Loading...</h3>
+        <h3 className="myLoadingTitle"> { title ? title : "Loading..." } </h3>
       </div>
     </div>
   )

@@ -1,15 +1,17 @@
 import M from 'materialize-css'
-import '../../styles/Form.scss';
-import '../../styles/Search.scss';
+import '../../styles/ActionPage.scss';
 
 
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 
+import MyLoader from '../../helpers/MyLoader'
 
 
-function Search() {
+
+
+function ActionPage() {
   useEffect(()=>{
     M.AutoInit();
   }, [])
@@ -18,11 +20,9 @@ function Search() {
   
   return (
     <div className="container">
-      <h4 className="pageTitle">Action Button Page</h4>
-
-      
+      <MyLoader title="Welcome!"/>      
     </div>
   )
 }
 
-export default Search
+export default ActionPage
