@@ -50,8 +50,7 @@ module.exports = DemoStrategy = new Strategy(
       // if not, create a new account
       User.create({
         'local.email': demoEmail,
-        'local.password': bcrypt.hashSync(demoPassword, bcrypt.genSaltSync()),
-        'local.isVerified': true,
+        'local.password': bcrypt.hashSync(demoPassword, bcrypt.genSaltSync()),        
 
         'local.username': 'Monkey D Luffy',
         'local.profileImage': '/Demo.png',
