@@ -110,7 +110,7 @@ function Contact() {
         <div className="myInputHolder">            
           <label htmlFor="title">Title <span className="red-text">(Required)</span></label>
           <div>
-            <i className="myPrefix fa fa-address-card-o"></i>
+            <i className="myPrefix far fa-address-card"></i>
             <input type="text" name="contactTitle" value={ title } onChange={ e=> setTitle(e.target.value) } required />
           </div>
         </div>

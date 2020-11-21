@@ -153,7 +153,7 @@ function Profile() {
 
         <div>
           <div className="myProfileInfoTitle">
-            <i className="fa fa-twitter"></i> Connect on Twitter
+            <i className="fab fa-twitter"></i> Connect on Twitter
           </div>
           <div className="myProfileInfoAnswer">
           { userData.twitterHandle ? userData.twitterHandle : (
