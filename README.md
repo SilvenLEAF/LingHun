@@ -1,7 +1,7 @@
 
-# URLShortenerAPP
-Shorten your crazy long URLs into sweet and short URLs with just a simple click on your fingertip.
-
+# LingHun
+This is the SOUL and LING HUN of my future app. It's the spirit and core for all my future self. It's LING HUN, the SOUL of my future. It's created by SilvenLEAF. I am SilvenLEAF.
+   
 ***
 ***
 
@@ -10,7 +10,7 @@ Shorten your crazy long URLs into sweet and short URLs with just a simple click 
 - [x] **auth**
 - [x] **oauth2.0 (Google, Github, LinkedIn)**
 - [x] **Role-based auth**
-- [ ] Email verification (2 way auth)
+- [x] Email verification (2 way auth)
 - [x] Password reset (Forgotten)
 
 ###### Main Features
@@ -21,6 +21,6 @@ Shorten your crazy long URLs into sweet and short URLs with just a simple click 
 ###### Others
 - [x] Demo Login
 - [x] Nodemailer Contact
-- [ ] Framermotion
+- [x] Framermotion (setup)
 ***
 ***
