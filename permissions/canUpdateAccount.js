@@ -1,6 +1,6 @@
 module.exports = canUpdateAccount = (userId, user)=>{
 
-  // if they are not DEMO user, they can update their account
+  // if they are not DEMO user, they can update their own account
   if(user.role !== 'demo' && userId == user._id) return true;
   
   
