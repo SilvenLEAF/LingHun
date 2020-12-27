@@ -31,8 +31,8 @@ function Signup() {
   const [error, setError] = useState('')
 
 
-  const demoLogin = async (e)=>{
-    e.preventDefault();
+  const demoLogin = async ()=>{
+    
 
     try {
       

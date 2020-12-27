@@ -35,8 +35,8 @@ function Login() {
 
 
 
-  const demoLogin = async (e)=>{
-    e.preventDefault();
+  const demoLogin = async ()=>{
+    
 
     try {
 
