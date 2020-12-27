@@ -1,6 +1,6 @@
 
 # LingHun
-This is the SOUL and LING HUN of my future app. It's the spirit and core for all my future self. It's LING HUN, the SOUL of my future. It's created by SilvenLEAF. I am SilvenLEAF.
+This is the SOUL and LING HUN of my future app. It's the spirit and core for all my future self. It's LING HUN, the SOUL of my future. It's created by SilvenLEAF. I am SilvenLEAF. (JavaScript Version)
    
 ***
 ***
